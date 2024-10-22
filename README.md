@@ -24,12 +24,13 @@
 
 # Authentication Solution
 
-1- we need to be able to handle user auth to application using both email/password and also OAuth using Google, Facebook, Apple, etc. we can use library like passport.js
-2- we also can use nestjs guards and interceptors to ensure protected routes and also implement different authorization or user persmissions using jwt tokens
-3- incase user authentication process became complex we can decouple it and create different nestjs microservice or monorepo that will be handle all auth related tasks.
-4- incase we have more that one type of user like normal user and admin we can extend our schema easily and ts interface and include role field
-that nestjs guards will use to ensure implementation of protected and role-based routes.
-5- we can also integrate inmemory database like redis to persist user jwt token so we able to revoke, refresh or blacklist tokens.
+<ol>
+<li>we need to be able to handle user auth to application using both email/password and also OAuth using Google, Facebook, Apple, etc. we can use library like passport.js</li>
+<li>we also can use nestjs guards and interceptors to ensure protected routes and also implement different authorization or user persmissions using jwt tokens</li>
+<li>incase user authentication process became complex we can decouple it and create different nestjs microservice or monorepo that will be handle all auth related tasks.</li>
+<li>incase we have more that one type of user like normal user and admin we can extend our schema easily and ts interface and include role field that nestjs guards will use to ensure implementation of protected and role-based routes.</li>
+<li>we can also integrate inmemory database like redis to persist user jwt token so we able to revoke, refresh or blacklist tokens.</li>
+</ol>
 
 ## Description
 
