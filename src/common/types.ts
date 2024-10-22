@@ -1,0 +1,4 @@
+export enum CART_STATUS {
+  ACTIVE,
+  COMPLETED
+}
