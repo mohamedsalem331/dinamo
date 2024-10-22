@@ -1,9 +1,16 @@
 import { Body, Controller, Get, Param, Patch, Post } from '@nestjs/common';
 import { UserDto } from './user.dto';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
+import { Product } from 'src/product/schema/product.schema';
+import { User } from './schema';
 
 @Controller('user')
 export class UserController {
-  // constructor(private userService: UserService) { }
+  constructor(
+    // private userService: UserService
+    @InjectModel('user') private userModel: Model<User>
+  ) { }
 
   /**
    * for creating a new user
